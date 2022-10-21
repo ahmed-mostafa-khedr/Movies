@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+:root{
+  --main-color:#fd7f17;
+}
+
+.font {
+  font-family: 'Cairo', sans-serif;
+  font-family: 'El Messiri', sans-serif;
+  font-family: 'Kanit', sans-serif;
+}
+.font-ar{
+  font-family: 'Cairo', sans-serif;
+  font-family: 'El Messiri', sans-serif;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Mada', sans-serif;
+}
+/*ــــــــــــــــــNav-Barــــــــــــــــــــــــ*/
+
+.logo{
+  text-shadow: 0 1px 1px black;
+}
+.logo::before{
+  content: '';
+  width:70%;
+  left: 0;
+  top:50%;
+  transform:translateY(-50%);
+  height: 70%;
+  position: absolute;
+  background-color:var(--main-color) ;
+  z-index: -1;
+  box-shadow: 0 0 10px white;
+}
+.logo::after{
+  content: '';
+  width: 20%;
+  left:69%;
+  top:50%;
+  transform:translateY(-50%);
+  height: 70%;
+  position: absolute;
+ 
+  z-index: -1;
+  border:14px solid var(--main-color);
+  border-color: var(--main-color)    transparent  transparent var(--main-color);
+}
+
+
+.search-img{
+  width: 20px;
+  height: 20px;
+  position:absolute;
+  top: 50%;
+  transform:translateY(-50%);
+  left:5px;
+}
+/*ـــــــــــــــــــــــــــــــــــــــــــ*/
+card {
+  position: relative;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+  height: 375px;
+ 
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: none;
+  transition: 0.5s ease;
+  background-color: black;
+}
+
+.card:hover .card-overlay {
+  opacity: 0.6;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.n-p{
+
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  font-weight: bold;
+  border-radius: 50%;
+ 
+  margin: 0 3px;
+ 
+}
+.xx{
+
+  box-shadow: 0 1px 10px var(--main-color) ;
+  
+}
+
+.story{
+  color: #fd7f17;
+  word-wrap: break-word;
+  text-shadow: 0 1px 1px white;
+}
+.film-img{
+  width: 100%;
+  height:100%;
+}
